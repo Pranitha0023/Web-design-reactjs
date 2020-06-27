@@ -1,0 +1,44 @@
+.para{
+    background-color: #33FFD7 ;
+    color: red;
+}
+#para {
+    background-color: antiquewhite;
+    color: yellowgreen;
+}
+.first,.second,.third{
+    border: 2px solid #000;
+    margin: 2px;
+    width: 400px;
+    text-align: center;
+}
+.first img,.second img,.third img{
+    width: 200px;
+}
+img{
+    width: 200px;
+    padding: 10px;
+}
+.parent{
+    display:flex;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 425px){
+    .parent{
+        flex-direction:column;
+    }
+    .first{
+        background-color: violet;
+    }
+}
+@media screen and (min-width: 426px) and (max-width:768px){
+    .parent{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .first{
+        background-color: #ddd;
+        border-radius: 20px;
+        width: 400px;
+    }
+}
